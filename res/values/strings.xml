@@ -4,5 +4,7 @@
     <string name="app_name">android_camera</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="pick_from_camera">From camera</string>
+    <string name="pick_from_album">From album</string>
 
 </resources>

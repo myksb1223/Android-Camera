@@ -7,10 +7,42 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
+    
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:orientation="horizontal" >
 
+    	<Button
+    	    android:id="@+id/cameraBtn"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:layout_marginRight="12dp"
+    	    android:text="@string/pick_from_camera"
+    	    android:onClick="buttonPressed" />
+    
+    
+    	<Button
+    	    android:id="@+id/albumBtn"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+			android:layout_marginLeft="12dp"    	    
+    	    android:text="@string/pick_from_album"
+    	    android:onClick="buttonPressed" />
+    
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/mImageView"        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonLayout"
+        android:scaleType="center" />
+        
+    
 </RelativeLayout>
